@@ -1,0 +1,426 @@
+
+// #-#-#-#-# Style Scrollbars with CSS
+a {
+    text-decoration: none;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--bs-scrollbar-color, rgba($dark, 0.5)) var(--bs-scrollbar-background, transparent);
+}
+  
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 10px;
+    height: 6px;
+}
+  
+*::-webkit-scrollbar-track {
+    background: var(--bs-scrollbar-background, transparent);
+}
+  
+*::-webkit-scrollbar-thumb {
+    background-color: var(--bs-scrollbar-color, rgba($dark, 0.5));
+    border-radius: 20px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    // background-color: #a8bbbf;
+    background-color: rgba($dark, 0.9);
+}
+
+// #-#-#-#-# Dropdown on hover
+
+@media (min-width: 992px) {
+    .dropdown:hover > .dropdown-menu-hover {
+        display: block !important;
+        margin-top: var(--bs-dropdown-spacer) !important;
+    }
+}
+
+// #-#-#-#-# hamburger helper
+
+/* Remove border from toggler */
+.navbar-toggler {
+    border: 0 !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: 0 !important;
+}
+
+/* Lines of the Toggler */
+.toggler-icon{
+    width: 30px;
+    height: 3px;
+    background-color: var(--bs-navbar-color);
+    display: block;
+    transition: all 0.2s;
+}
+
+/* Adds Space between the lines */
+.middle-bar{
+    margin: 5px auto;
+}
+
+/* State when navbar is opened (START) */
+.navbar-toggler .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+/* State when navbar is opened (END) */
+
+/* State when navbar is collapsed (START) */
+.navbar-toggler.collapsed .top-bar {
+    transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    transform: rotate(0);
+}
+/* State when navbar is collapsed (END) */
+
+/* Color of Toggler when collapsed */
+.navbar-toggler.collapsed .toggler-icon {
+    background-color: var(--bs-navbar-color);
+}
+
+// #-#-#-#-# button back to top
+
+.btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+// #-#-#-#-# nav tabs
+
+// .nav-tabs .active, .nav-tabs .nav-link:hover, .nav-tabs .nav-link:active, .nav-tabs .nav-link:focus{
+//     border: none !important;
+//     border-bottom: 0.4rem solid rgb(255, 0, 0) !important;
+// }
+
+// .nav-tabs {
+//     border: none !important;
+// }
+
+// #-#-#-#-# Social button
+.social {
+    text-transform: uppercase !important;
+    font-weight: bold !important;
+    font-size: 12px !important;
+}
+
+.twitter {
+    background: #55acee !important;
+    color: white !important;
+}
+.twitter:hover, .twitter:focus {
+    filter: brightness(95%) !important;
+}
+
+
+
+.instagram {
+    background: #125688 !important;
+    color: white !important;
+}
+.instagram:hover, .instagram:focus {
+    filter: brightness(95%) !important;
+}
+
+
+
+
+.facebook {
+    background: #3b5998 !important;
+    color: white !important;
+}
+.facebook:hover, .facebook:focus {
+    filter: brightness(95%) !important;
+}
+
+
+
+.linkedin {
+    background: #0077b5 !important;
+    color: white !important;
+}
+.linkedin:hover, .linkedin:focus {
+    filter: brightness(95%) !important;
+}
+
+
+
+.github {
+    background: #00405d !important;
+    color: white !important;
+}
+.github:hover, .github:focus {
+    filter: brightness(95%) !important;
+}
+
+
+
+.youtube {
+    background: #e52d27 !important;
+    color: white !important;
+}
+.youtube:hover, .youtube:focus {
+    filter: brightness(95%) !important;
+}
+
+
+
+.apple {
+    background: black !important;
+    color: white !important;
+}
+.apple:hover, .apple:focus {
+    filter: brightness(95%) !important;
+}
+
+
+
+.android {
+    background: black !important;
+    color: white !important;
+}
+.android:hover, .android:focus {
+    filter: brightness(95%) !important;
+}
+
+
+
+.behance {
+    background: #1769ff !important;
+    color: white !important;
+}
+.behance:hover, .behance:focus {
+    filter: brightness(95%) !important;
+}
+
+
+
+.pinterest {
+    background: #cc2127 !important;
+    color: white !important;
+}
+.pinterest:hover, .pinterest:focus {
+    filter: brightness(95%) !important;
+}
+
+
+
+.vimeo {
+    background: #1ab7ea !important;
+    color: white !important;
+}
+.vimeo:hover, .vimeo:focus {
+    filter: brightness(95%) !important;
+}
+
+
+
+.slack {
+    background: #3aaf85 !important;
+    color: white !important;
+}
+.slack:hover, .slack:focus {
+    filter: brightness(95%) !important;
+}
+
+
+
+.dribbble {
+    background: #ea4c89 !important;
+    color: white !important;
+}
+.dribbble:hover, .dribbble:focus {
+    filter: brightness(95%) !important;
+}
+
+
+
+.reddit {
+    background: #ff4500 !important;
+    color: white !important;
+}
+.reddit:hover, .reddit:focus {
+    filter: brightness(95%) !important;
+}
+
+
+
+.snapchat {
+    background: #fffa37 !important;
+    color: dark !important;
+}
+.snapchat:hover, .snapchat:focus {
+    filter: brightness(95%) !important;
+}
+
+
+
+.whatsapp {
+    background: #43d854 !important;
+    color: white !important;
+}
+.whatsapp:hover, .whatsapp:focus {
+    filter: brightness(95%) !important;
+}
+
+
+
+.telegram {
+    background: #00405d !important;
+    color: white !important;
+}
+.telegram:hover, .telegram:focus {
+    filter: brightness(95%) !important;
+}
+
+
+
+.google {
+    background: #dc4e41 !important;
+    color: white !important;
+}
+.google:hover, .google:focus {
+    filter: brightness(95%) !important;
+}
+
+
+
+.skype {
+    background: #00aff0 !important;
+    color: white !important;
+}
+.skype:hover, .skype:focus {
+    filter: brightness(95%) !important;
+}
+
+
+
+.quora {
+    background: #A82400 !important;
+    color: white !important;
+}
+.quora:hover, .quora:focus {
+    filter: brightness(95%) !important;
+}
+
+
+
+
+.paypal {
+    background: #00457C !important;
+    color: white !important;
+}
+.paypal:hover, .paypal:focus {
+    filter: brightness(95%) !important;
+}
+
+
+
+.medium {
+    background: black !important;
+    color: white !important;
+}
+.medium:hover, .medium:focus {
+    filter: brightness(95%) !important;
+}
+
+
+.signal {
+    background: #3A76F0  !important;
+    color: white !important;
+}
+.signal:hover, .signal:focus {
+    filter: brightness(95%) !important;
+}
+
+
+
+.messenger {
+    background: linear-gradient(120deg,#A334FA, #0695FF) !important;
+    color: white !important;
+}
+.messenger:hover, .messenger:focus {
+    filter: brightness(95%) !important;
+}
+
+
+
+.discord {
+    background: #5865F2 !important;
+    color: white !important;
+}
+.discord:hover, .discord:focus {
+    filter: brightness(95%) !important;
+}
+
+
+
+.stack-overflow {
+    background: #F47F24 !important;
+    color: white !important;
+}
+.stack-overflow:hover, .stack-overflow:focus {
+    filter: brightness(95%) !important;
+}
+
+
+.spotify {
+    background: #1ED761 !important;
+    color: white !important;
+}
+.spotify:hover, .spotify:focus {
+    filter: brightness(95%) !important;
+}
+
+
+
+.tiktok {
+    background: #EE1D52 !important;
+    color: #FFFFFF !important;
+}
+.tiktok:hover, .tiktok:focus {
+    filter: brightness(95%) !important;
+}
+
+
+
+.meta {
+    background: #0668E1 !important;
+    color: white !important;
+}
+.meta:hover, .meta:focus {
+    filter: brightness(95%) !important;
+}

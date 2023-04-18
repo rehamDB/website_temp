@@ -1,0 +1,142 @@
+// scss-docs-start theme-color-variables 04d0d9 1a73e8
+$primary:       #0077C8;
+$secondary:     rgb(51, 65, 85);
+$success:       #03ef62;
+$info:          violet;
+$warning:       #fb8c00;
+$danger:        #f91942;
+$light:         #f0f2f5;
+$dark:          #101d2d;
+
+$enable-negative-margins: true;
+$navbar-light-color: $dark;
+$navbar-dark-color: $light;
+
+// Close button
+$btn-close-color: $dark;
+$btn-close-opacity:          .90;
+$btn-close-hover-opacity:    .95;
+
+// nav tabs 
+// $nav-tabs-border-width: 0;
+// $nav-tabs-border-color: transparent;
+// $nav-tabs-link-active-bg: transparent;
+// $nav-tabs-border-radius: 0;
+// $nav-link-transition: all 0.5s ease 0s;
+
+$enable-shadows: true;
+// $enable-gradients: true;
+
+$position-values: (
+  0: 0,
+  5: 5%,
+  10: 10%,
+  15: 15%,
+  20: 20%,
+  25: 25%,
+  30: 30%,
+  35: 35%,
+  40: 40%,
+  45: 45%,
+  50: 50%,
+  55: 55%,
+  60: 60%,
+  65: 65%,
+  70: 70%,
+  75: 75%,
+  80: 80%,
+  85: 85%,
+  90: 90%,
+  95: 95%,
+  100: 100%
+);
+
+@import "./node_modules/bootstrap/scss/_functions";
+@import "./node_modules/bootstrap/scss/_variables";
+
+// Accordion style
+$accordion-color: $secondary;
+// $accordion-button-bg: $dark;
+// $accordion-button-active-bg: tint-color($dark, 90%);
+
+$accordion-button-active-bg:              tint-color($secondary, 90%);
+$accordion-button-active-color:           shade-color($secondary, 90%);
+$accordion-icon-active-color:           shade-color($secondary, 90%);
+
+
+$accordion-button-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="#{$accordion-icon-color}" class="bi bi-plus-circle" viewBox="0 0 16 16"> <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/> </svg>');
+$accordion-button-active-icon:  url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="#{$accordion-icon-active-color}" class="bi bi-x-circle" viewBox="0 0 16 16"> <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/> <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/> </svg>');
+
+// other colors
+$custom-theme-colors: (
+    "main": #F15A24
+);
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+$custom-spacers: (
+    6: $spacer * 4,
+    7: $spacer * 6,
+    8: $spacer * 8,
+    9: $spacer * 10,
+    10: $spacer * 12,
+    11: $spacer * 14,
+    12: $spacer * 16,
+    13: $spacer * 18,
+    14: $spacer * 20,
+    15: $spacer * 22,
+);
+$spacers: map-merge($custom-spacers, $spacers);
+
+// Dropdown
+
+$dropdown-min-width:                13rem;
+$dropdown-padding-x:                1rem;
+$dropdown-padding-y:                1rem;
+$dropdown-spacer:                   .125rem;
+$dropdown-font-size:                $font-size-base*0.85;
+$dropdown-color:                    $body-color;
+$dropdown-bg:                       $white;
+$dropdown-border-color:             $white;
+$dropdown-border-radius:            0.75rem;
+$dropdown-border-width:             $border-width;
+$dropdown-inner-border-radius:      0.75rem;
+$dropdown-divider-bg:               $dropdown-border-color;
+$dropdown-divider-margin-y:         $spacer * .5;
+$dropdown-box-shadow:               $box-shadow;
+
+$dropdown-link-color:               $gray-700;
+$dropdown-link-hover-color:         $dark;
+$dropdown-link-hover-bg:            $gray-200;
+
+$dropdown-link-active-color:        $component-active-color;
+$dropdown-link-active-bg:           $component-active-bg;
+
+$dropdown-link-disabled-color:      $gray-500;
+
+$dropdown-item-padding-y:           $spacer * .25;
+$dropdown-item-padding-x:           $spacer;
+
+$dropdown-header-color:             $dark;
+$dropdown-header-padding-x:         .25rem;
+$dropdown-header-padding-y:         .5rem;
+// fusv-disable
+$dropdown-header-padding:           $dropdown-header-padding-y $dropdown-header-padding-x; // Deprecated in v5.2.0
+// fusv-enable
+
+// Drowdown dark
+$dropdown-dark-color:               $light;
+$dropdown-dark-bg:                  $secondary;
+$dropdown-dark-border-color:        $secondary;
+$dropdown-dark-divider-bg:          $dropdown-divider-bg;
+$dropdown-dark-box-shadow:          $box-shadow;
+
+$dropdown-dark-link-color:          $dropdown-dark-color;
+$dropdown-dark-link-hover-color:    $white;
+$dropdown-dark-link-hover-bg:       rgba($white, .15);
+
+$dropdown-dark-link-active-color:   $dropdown-link-active-color;
+$dropdown-dark-link-active-bg:      $dropdown-link-active-bg;
+
+$dropdown-dark-link-disabled-color: $gray-500;
+$dropdown-dark-header-color:        $white;
