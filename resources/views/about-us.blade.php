@@ -289,7 +289,9 @@
 						</a>
 					</div>
 
-				
+					<p class="mt-2 text-gray small">
+						PLA-GLOB Factory manufacture and supply essential plastic-made products that is required in various areas, fields, and industries.
+					</p>
 				</div>
 
 				<div class="col-12 col-md-3 col-lg-2">
@@ -319,6 +321,7 @@
 					</div>
 				</div>
 
+
 				<div class="col-12 col-md-3 col-lg-3">
 					<h6 class="mt-3 mt-lg-0">Information</h6>
 					<div>
@@ -337,7 +340,7 @@
 
 			<div class="d-flex justify-content-between align-items-center flex-wrap pt-3 pb-4">
 				<div class="order-last order-md-first text-gray small mt-3">
-					&copy; CelebCollab, All rights reserved.
+					&copy; PLA-GLOB Factory, All rights reserved.
 				</div>
 
 				<div class="order-first order-md-last mt-3">
@@ -399,6 +402,7 @@
 			</div>
 		</div>
 	</footer>
+
 
 
 	<!-- Button back to top -->
